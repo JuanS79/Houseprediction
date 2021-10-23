@@ -20,7 +20,7 @@ Y = pd.DataFrame(boston.target, columns=["MEDV"])
 # Header of Specify Input Parameters
 st.sidebar.header('Specify Input Parameters')
 
-CON = st.sidebar.slider('concha e su mare', X.CRIM.min(), X.CRIM.max(), X.CRIM.mean() )
+CON = st.sidebar.slider('Mio de prueba', X.CRIM.min(), X.CRIM.max(), X.CRIM.mean() )
 
 def user_input_features():
     CRIM = st.sidebar.slider('CRIM', X.CRIM.min(), X.CRIM.max(), X.CRIM.mean())
